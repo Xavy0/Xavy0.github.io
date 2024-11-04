@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="In Libris.css">
+        <link rel="icon" href="In Libris library logo.png" type="image/png">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <title>In Libris</title>
+    </head>
+    <body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="In Libris library logo.png" alt="Library Logo"> 
+                <h1 class="library-name">In Libris</h1> 
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#book-collection">Collection</a></li>
+                    <li><a href="#">Policies</a></li>
+                    <li>
+                        <a href="#footer-container">About</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Facilities</a></li>
+                            <li><a href="#">Vission-Mission</a></li>
+                            <li><a href="#">Service Hours</a></li>
+                            <li><a href="#">News and Events</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#services-container ritem">Request</a></li>
+                    <li><a href="#login" class="cta-button">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--lOG IN PAGE-->
+    <div id="login" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close-btn">&times;</a>
+            <div class="modal-left-box">
+                <h2>Welcome Back!</h2>
+                <p>Please login to your account.</p>
+            </div>
+            <div class="modal-right-content">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <label for="username">Username</label>
+                    <div class="input-wrapper">
+                        <i class='bx bxs-user'></i>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+
+                    <label for="password">Password</label>
+                    <div class="input-wrapper">
+                        <i class='bx bxs-lock-alt'></i>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Login</button>
+                </form>
+                <p>Don't have an account? <a href="#register" class="register-link">Sign Up</a></p>
+            </div>
+        </div>
+    </div>
+    <!--REGISTER PAGE-->
+    <div id="register" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close-btn">&times;</a>
+            <div class="modal-left-content">
+                <h2>Create Your Account</h2>
+                <p>Join us to access exclusive resources and materials.</p>
+            </div>
+            <div class="modal-right-box">
+                <h2>Register</h2>
+                <form id="registerForm">
+                    <label for="firstname">First Name</label>
+                    <div class="input-wrapper">
+                        <i class='bx bxs-user'></i>
+                        <input type="text" id="firstname" name="firstname" required>
+                    </div>
+
+                    <label for="lastname">Last Name</label>
+                    <div class="input-wrapper">
+                        <i class='bx bxs-user'></i>
+                        <input type="text" id="lastname" name="lastname" required>
+                    </div>
+
+                    <label for="middleinitial">Middle Initial</label>
+                    <div class="input-wrapper">
+                        <i class='bx bxs-user'></i>
+                        <input type="text" id="middleinitial" name="middleinitial" maxlength="1">
+                    </div>
+
+                    <label for="gender">Gender</label>
+                    <div class="input-wrapper">
+                        <i class='bx bxs-group'></i>
+                        <select id="gender" name="gender" required>
+                            <option value="" disabled selected>Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <label for="birthdate">Date of Birth</label>
+                    <div class="input-wrapper">
+                        <i class='bx bxs-calendar'></i>
+                        <input type="date" id="birthdate" name="birthdate" required>
+                    </div>
+
+                    <label for="email">Email Address</label>
+                    <div class="input-wrapper">
+                        <i class='bx bxs-envelope'></i>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <label for="registerUsername">Create Username</label>
+                    <div class="input-wrapper">
+                        <i class='bx bxs-user'></i>
+                        <input type="text" id="registerUsername" name="username" required>
+                    </div>
+
+                    <label for="registerPassword">Create Password</label>
+                    <div class="input-wrapper">
+                        <i class='bx bxs-lock-alt'></i>
+                        <input type="password" id="registerPassword" name="password" required>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Register</button>
+                </form>
+                <p>Already have an account? <a href="#login" class="register-link">Login</a></p>
+            </div>
+        </div>
+    </div>
+ 
+    <!--WELCOME PAGE PAGE-->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>In Libris<br> Exclusives</h1>
+            <p>Discover, learn, and connect: the library is your <br> partner in lifelong exploration</p>
+            <a href="#" class="home-btn">Let's read now</a> 
+        </div>
+    </section> 
+    <!--SEARCH PAGE-->
+    <section class="nav-search" id="nav-search">
+        <div class="search">
+            <input type="text" placeholder="Search" class="search-bar">
+            <button type="submit" class="search-btn">Search</button>
+        </div>
+    </section>
+    <!--CATEGORY BOOKS-->
+    <section class="container">
+        <div class="text">
+            <h2>Book Category</h2>
+        </div>
+        <div class="row-items">
+            <div class="container-box">
+                <div class="container-img">
+                    <img src="Ref.gif" alt="Fiction Genre Icon" class="gif-icon">
+                    <img src="Ref.png" alt="Static Genre Icon" class="icon">
+                </div>
+                <h4>Reference</h4>
+            </div>
+
+            <div class="container-box">
+                <div class="container-img">
+                    <img src="fiction.gif" alt="Fiction Genre Icon" class="gif-icon">
+                    <img src="fiction.png" alt="Static Genre Icon" class="icon">
+                </div>
+                <h4>Fiction</h4>
+            </div>
+        
+            <div class="container-box">
+                <div class="container-img">
+                    <img src="Bul.gif" alt="Fiction Genre Icon" class="gif-icon">
+                    <img src="Bul.png" alt="Static Genre Icon" class="icon">
+                </div>
+                <h4>Bulacaniana</h4>
+            </div>
+        
+            <div class="container-box">
+                <div class="container-img">
+                    <img src="Fil.gif" alt="Fiction Genre Icon" class="gif-icon">
+                    <img src="Fil.png" alt="Static Genre Icon" class="icon">
+                </div>
+                <h4>Filipiniana</h4>  
+            </div>
+        </div>
+    </section>
+    <!--COLLECTION BOOKS-->        
+    <section class="book-collection" id="book-collection">
+    <div class="category">
+        <h2 class="category-title">Reference</h2>
+        <div class="books">
+            <div class="book">
+                <img src="STUDENT ATLAS.png" alt="Student Atlas">
+                <h4>Student Atlas</h4>
+                <a href="#" class="read-btn">Read More</a>
+            </div>
+            <div class="book">
+                <img src="Timelines.png" alt="Timelines from Indian History">
+                <h4>Timelines from Indian History</h4>
+                <a href="#" class="read-btn">Read More</a>
+            </div>
+            <div class="book">
+                <img src="WAR2.png" alt="The World War II Book">
+                <h4>The World War II Book</h4>
+                <a href="#" class="read-btn">Read More</a>
+            </div>
+            <div class="book">
+                <img src="History.png" alt="Smithsonian History of the World Map">
+                <h4>Smithsonian History of the World Map</h4>
+                <a href="#" class="read-btn">Read More</a>
+            </div>
+            <div class="book">
+                <img src="ASYLUM SPEAKERS.png" alt="ASYLUM SPEAKERS">
+                <h4>ASYLUM SPEAKERS</h4>
+                <a href="#" class="read-btn">Read More</a>
+            </div>
+            <div class="book">
+                <img src="HUMAN BODY.png" alt="HUMAN BODY">
+                <h4>HUMAN BODY</h4>
+                <a href="#" class="read-btn">Read More</a>
+            </div> 
+        </div>
+    </div>
+
+    <div class="category">
+        <h2 class="category-title">Fiction</h2>
+        <div class="books">
+            <div class="book">
+                <img src="REWITCHED.png" alt="Rewitched">
+                <h4>Rewitched</h4>
+                <a href="#" class="read-btn">Read More</a>
+            </div>
+            <div class="book">
+                <img src="Tips.png" alt="When the World Tips Over">
+                <h4>When the World Tips Over</h4>
+                <a href="#" class="read-btn">Read More</a>
+            </div>
+            <div class="book">
+                <img src="Yellow.png" alt="Yellowface">
+                <h4>Yellowface</h4>
+                <a href="#" class="read-btn">Read More</a>
+            </div>
+            <div class="book">
+                <img src="Green.png" alt="Green Dot">
+                <h4>Green Dot</h4>
+                <a href="#" class="read-btn">Read More</a>
+            </div>
+            <div class="book">
+                <img src="Him.png" alt="REMINDERS OF HIM">
+                <h4>REMINDERS OF HIM</h4>
+                <a href="#" class="read-btn">Read More</a>
+            </div>
+            <div class="book">
+                <img src="Dollhouse.png" alt="THE LIBRARY OF LOST DOLLHOUSES">
+                <h4>THE LIBRARY OF LOST DOLLHOUSES</h4>
+                <a href="#" class="read-btn">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2 class="category-title">Bulacaniana</h2>
+        <div class="books">
+            <div class="book">
+                <img src="MALOLOS.png" alt="Student Atlas">
+                <h4>Women in Malolos</h4>
+                <a href="#" class="read-btn">Read More</a>
+            </div>
+            <div class="book">
+                <img src="PULILAN.png" alt="Timelines from Indian History">
+                <h4>Pulilan: The Blessed Land</h4>
+                <a href="#" class="read-btn">Read More</a>
+            </div>
+            <div class="book">
+                <img src="CRISIS.png" alt="The World War II Book">
+                <h4>Malolos: The Crisis of the Republic</h4>
+                <a href="#" class="read-btn">Read More</a>
+            </div>
+            <div class="book">
+                <img src="PHILIPPINES.png" alt="Smithsonian History of the World Map">
+                <h4>Frailocracy in the Philippines</h4>
+                <a href="#" class="read-btn">Read More</a>
+            </div>
+            <div class="book">
+                <img src="THE MALOLOS CONGRESS.png" alt="THE MALOLOS CONGRESS">
+                <h4>THE MALOLOS CONGRESS</h4>
+                <a href="#" class="read-btn">Read More</a>
+            </div>
+            <div class="book">
+                <img src="La Soberanía.png" alt="La Soberanía">
+                <h4>La Soberanía</h4>
+                <a href="#" class="read-btn">Read More</a>
+            </div>        
+        </div>
+    </div>
+        
+    <div class="category">
+        <h2 class="category-title">Filipiniana</h2>
+        <div class="books">
+            <div class="book">
+                <img src="THE REIGN OF GREED.png" alt="Rewitched">
+                <h4>The Reign of Greed</h4>
+                <a href="#" class="read-btn">Read More</a>
+            </div>
+            <div class="book">
+                <img src="THE SOCIAL CANCER.png" alt="When the World Tips Over">
+                <h4>The Social Cancer</h4>
+                <a href="#" class="read-btn">Read More</a>
+            </div>
+            <div class="book">
+                <img src="NOLI ME TANGERE.png" alt="Yellowface">
+                <h4>Noli Me Tangere</h4>
+                <a href="#" class="read-btn">Read More</a>
+            </div>
+            <div class="book">
+                <img src="EL FILIBUSTERISMO.png" alt="Green Dot">
+                <h4>EL FILIBUSTERISMO</h4>
+                <a href="#" class="read-btn">Read More</a>
+            </div>
+            <div class="book">
+                <img src="BARANGAY.png" alt="BARANGAY">
+                <h4>BARANGAY</h4>
+                <a href="#" class="read-btn">Read More</a>
+            </div>
+            <div class="book">
+                <img src="BOXER CODEX.png" alt="BOXER CODEX">
+                <h4>BOXER CODEX</h4>
+                <a href="#" class="read-btn">Read More</a>
+            </div>
+        </div>
+    </section>
+    <!--SERVICES PAGE-->
+    <div class="text" id="imgslide">
+        <h2>Service</h2>
+    </div>
+        
+        <section class="img-slider">
+            <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+
+        <section id="srv-cont">
+            <div class="srv-card">
+                <div class="srv-box">
+                    <div class="srv-img">
+                        <img src="e-book.png" alt="E-Books" class="gif">
+                    </div>
+                    <h4>eBooks</h4>
+                    <p>Knovel has a very good collection of different reference books, research papers, articles, handbooks, and manuals for a wide variety of engineering domains.</p>
+                    <a href="#" class="btn-more">Access Here</a>
+                </div>
+            </div>
+        
+            <div class="srv-card">
+                <div class="srv-box">
+                    <div class="srv-img">
+                        <img src="e-journal.png" alt="E-Journals" class="gif">
+                    </div>
+                    <h4>eJournals</h4>
+                    <p>JSTOR offers more than 2,800 top scholarly journals in the humanities, social sciences, and sciences.</p>
+                    <a href="#" class="btn-more">Access Here</a>
+                </div>
+            </div>
+        
+            <div class="srv-card">
+                <div class="srv-box">
+                    <div class="srv-img">
+                        <img src="research tool.png" alt="Research Tools" class="gif">
+                    </div>
+                    <h4>Research Tools</h4>
+                    <p>EBSCO Discovery Service is an all-inclusive search solution that simplifies in-depth research.</p>
+                    <a href="#" class="btn-more">Access Here</a>
+                </div>
+            </div>
+        
+            <div class="srv-card">
+                <div class="srv-box">
+                    <div class="srv-img">
+                        <img src="database.png" alt="Databases" class="gif">
+                    </div>
+                    <h4>Databases</h4>
+                    <p>eSCRA provides access to Supreme Court decisions and resolutions in the Philippines.</p>
+                    <a href="#" class="btn-more">Access Here</a>
+                </div>
+            </div>
+        </section>
+    <!--floating-button-->
+        <div class="main-content">
+            <a href="#" class="floating-button">
+                <i class="icon">&#10067;</i>
+                Ask Us or Request
+            </a>
+        </div>
+    <!--FOOTER IN PAGE-->
+        <footer>
+            <div class="footer-container" id="footer-container">
+                <div class="left-section">
+                    <h3>Bulacan State University</h3>
+                    <p><strong>Location:</strong><br>
+                        Malolos, Bulacan<br>
+                        (044) 919 7800<br>
+                        <a href="mailto:In.Libris@bulsu.edu.ph">In.Libris@bulsu.edu.ph</a>
+                    </p>
+                    <p><strong>Reference Librarian:</strong><br>
+                        (+632) 8981-8500<br>
+                        <a href="mailto:libraryinfo.bulsu@bulsu.edu.ph">libraryinfo.bulsu.edu.ph</a>
+                    </p>
+                </div>
+        
+                <div class="right-section">
+                    <div class="categories">
+                        <h4>Categories</h4>
+                        <button class="dropdown">Dropdown List</button>
+                    </div>
+                    <div class="site-search">
+                        <h4>Site Search</h4>
+                        <div class="search-container">
+                            <input type="text" placeholder="Search">
+                            <button><i class='bx bx-search'></i></button>
+                        </div>
+                    </div>
+                    <p>&copy; 2024 The University Library, Bulacan State University</p>
+                </div>
+            </div>
+        </footer>  
+        
+    </body>
+</html
